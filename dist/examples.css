@@ -754,6 +754,7 @@ div.tab-pane {
   position: relative;
   overflow: hidden;
   min-height: 300px;
+  max-width: 380px;
   height: 100%;
 }
 .card:hover {
@@ -777,6 +778,7 @@ div.tab-pane {
 .card-body .card-title {
   margin-bottom: calc(50% + 20px);
   transition: 1.5s ease;
+  font-weight: bold;
 }
 .card:hover .card-body .card-title {
   margin-bottom: .75rem;
@@ -806,7 +808,10 @@ div.tab-pane {
   bottom: 0;
 }
 
+.card-text {
+	font-size: 1rem;
+}
+
 
  
-
 
