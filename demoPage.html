@@ -11,8 +11,8 @@
 	
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -266,30 +266,36 @@
 	    <div class="section" id="section3">
 			<div class="container-fluid" style="margin-top: 3%;">
 				<div class="row">
-				  <div class="card-wrapper col-lg-3 col-md-4 col-xs-12">
-					<div class="card shadow">
-					  <div class="card-img-wrapper">
-						<img class="card-img-top" src="https://www.fortech.ro/wp-content/uploads/2018/12/DigitalCommerceSoftwarePlatform-e1554472385425.jpg" alt="Card image cap">
-					  </div>
-					  <div class="card-body">
-						<h5 class="card-title">Special title treatment Special</h5>
-						<div class="card-content">
-						  <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
-						  <a href="#" class="btn btn-primary">Go somewhere</a>
+					<div class="card-wrapper col-lg-3 col-md-4 col-xs-12">
+						<div class="card shadow">
+						  <div class="card-img-wrapper">
+							<img class="card-img-top img-responsive" src="./img/LRT_Deming.PNG" alt="" >  
+						</div>
+						  <div class="card-body">
+							<h5 class="card-title">Likelihood Ratio-Based Test (LRT) Method</h5>
+							<hr>
+							<div class="card-content">
+							  <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
+							  <hr> 
+							  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+							  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal"> VIEW</button>
+							</div>
+						  </div>
 						</div>
 					  </div>
-					</div>
-				  </div>
 				  <div class="card-wrapper col-lg-3 col-md-4 col-xs-12">
 					<div class="card shadow">
 					  <div class="card-img-wrapper">
-						<img class="card-img-top" src="https://static.observableusercontent.com/thumbnail/fec8007d804a3980f3e3eb8698bdc3cff2c2ee42fe37cc381e818104f344db9a.jpg" alt="Card image cap">
-					  </div>
+						<img class="card-img-top" src="./img/venus.PNG" alt="Card image cap">  
+					</div>
 					  <div class="card-body">
 						<h5 class="card-title">Traveling Salesman Artwork</h5>
+						<hr>
 						<div class="card-content">
 						  <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
-						  <a href="#" class="btn btn-primary">Go somewhere</a>
+						  <hr> 
+						  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+						  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal"> VIEW</button>
 						</div>
 					  </div>
 					</div>
@@ -297,13 +303,16 @@
 				  <div class="card-wrapper col-lg-3 col-md-4 col-xs-12">
 					<div class="card shadow">
 					  <div class="card-img-wrapper">
-						<img class="card-img-top" src="https://www.fortech.ro/wp-content/uploads/2018/12/DigitalCommerceSoftwarePlatform-e1554472385425.jpg" alt="Card image cap">
-					  </div>
+						<img class="card-img-top" src="./img/ARIC.PNG" alt="Card image cap">  
+					</div>
 					  <div class="card-body">
-						<h5 class="card-title">Special title treatment Special</h5>
+						<h5 class="card-title">ARIC Study Publications Visualization</h5>
+						<hr>
 						<div class="card-content">
 						  <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural</p>
-						  <a href="#" class="btn btn-primary">Go somewhere</a>
+						  <hr> 
+						  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+						  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal_ARIC"> VIEW</button>
 						</div>
 					  </div>
 					</div>
@@ -347,6 +356,58 @@
 	    	</div>
 	    </div>
 	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> </div>
+                <div class="modal-body p-0 row">
+                    <div class="col-12 col-md-6 ad p-0 "> 
+						<!-- <img src="https://i.imgur.com/UCqKKB4.jpg" width="100%" height="100%" />  -->
+						<div id="observablehq-viewof-dsOption-87537451" style="margin: 2%;"></div>	
+						<div id="observablehq-Chart-87537451"></div>					
+						<script type="module">
+						import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+						import define from "https://api.observablehq.com/@howardyao/traveling-salesman-artwork.js?v=3";
+						new Runtime().module(define, name => {
+						  if (name === "viewof dsOption") return new Inspector(document.querySelector("#observablehq-viewof-dsOption-87537451"));
+						  if (name === "Chart") return new Inspector(document.querySelector("#observablehq-Chart-87537451")); 
+						  return ["data","y","line","x"].includes(name);
+						});
+						</script>
+					</div>
+                    <div class="details col-12 col-md-6 ">
+                        <h2>STAY TUNED</h2>
+                        <p><small class="para">Subscribe to our newsletter and never miss our<br> designs ,latest news.etc.</small></p>
+                        <p><small class="para">Our newsletter is sent once a week, every<br>Monday</small></p>
+						<p><small class="para">Our newsletter is sent once a week, every<br>Monday</small></p>
+                        <div class="form-group mt-3 pt-3 mb-5"><input type="email" class="form-control" placeholder="email@example.com"> </div> <small class="text-muted"><a href="#">Personal Data Charter</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="modal fade" id="exampleModal_ARIC" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button> </div>
+                <div class="modal-body p-0 row">
+                    <div class="col-12 col-md-9 ad p-0 "> 
+						<iframe src="https://public.tableau.com/views/ARICArticleCategoryYear/Dashboard?:embed=y&:display_count=yes&:showTabs=n&:showVizHome=no" width="100%" height="700" scrolling="no" style="margin: 1%;" frameBorder="0"></iframe>
+					</div>
+                    <div class="details col-12 col-md-3 ">
+                        <h2>STAY TUNED</h2>
+                        <p><small class="para">Subscribe to our newsletter and never miss our<br> designs ,latest news.etc.</small></p>
+                        <p><small class="para">Our newsletter is sent once a week, every<br>Monday</small></p>
+						<p><small class="para">Our newsletter is sent once a week, every<br>Monday</small></p>
+                        <div class="form-group mt-3 pt-3 mb-5"><input type="email" class="form-control" placeholder="email@example.com"> </div> <small class="text-muted"><a href="#">Personal Data Charter</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 	<script type="text/javascript" src="./dist/jquery.pagepiling.js"></script>
